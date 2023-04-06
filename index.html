@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        form {
+            background: #F4F478;
+            width: 40%;
+            height: 42rem;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        h1 {
+            color: orangered;
+        }
+        button {
+            color: white;
+            width: 8rem;
+            height: 2rem;
+            font-size: 1.5em;
+            font-family: bold;
+            background: orangered;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <center>
+            <!-- heading for personal details -->
+            <h1>Personal Details</h1>
+            <!-- name -->
+            Name: <input type="text" name="fname"><br><br>
+            <!-- password -->
+            Password: <input type="password" name="pass"><br><br>
+            <!-- email -->
+            Email-id: <input type="email" name="mail"><br><br>
+            <!-- gender with male and female-->
+            Gender: 
+            <input type="radio" name="gen">Male
+            <input type="radio" name="gen">Female <br><br>
+            <!-- contact -->
+            Contact: <input type="number" name="contact"><br>
+            <!-- Educational qualification heading -->
+            <h1>Educational Qualification</h1>
+            <!-- Details about degree -->
+            Degree: <select name="degree">
+                <option selected>--Select Group--</option>
+                <option value="ug">Under Graduation</option>
+                <option value="pg">Post Graduation</option>
+            </select><br><br>
+            <!-- Details about field -->
+            Engineering: <select name="enggDegree">
+                <option selected>--Select Group--</option>
+                <option value="cs">Computer Science</option>
+                <option value="ce">Civil Engineering</option>
+                <option value="me">Mechanical Engineering</option>
+                <option value="pe">Production Engineering</option>
+                <option value="ee">Electrical Engineering</option>
+            </select><br><br>
+            <!-- Your hobbies -->
+            Hobbies: <input type="radio" name="chess">Playing Chess
+            <input type="radio" name="books">Reading Books
+            <!-- Address -->
+            <h1>Address</h1>
+            <textarea name="address" cols="40" rows="4" placeholder="write here....."></textarea>
+            <br><br>
+            <!-- attach your resume -->
+            Attach Resume: <input type="file" vlaue="choose file"><br><br>
+            <button type="submit" value="submit">Submit</button>
+        </center>
+    </form>
+</body>
+</html>
