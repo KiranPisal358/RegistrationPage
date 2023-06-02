@@ -1,2 +1,2 @@
 # RegistrationPage
-https://kiranpisal-registration-page-0019.netlify.app/
+https://kiranpisal-personal-info-page-0019.netlify.app/
